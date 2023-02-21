@@ -47,7 +47,6 @@ body{
 .navigation{
     margin-top: 25px;
     height: 74px;
-    font-family: var(--font2);
     display: flex;
     justify-content: space-between;
     align-items: center;

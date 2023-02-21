@@ -1,48 +1,33 @@
 .about-post-content{
-    background-color: white;
+    background-color: white
 }
 
 .social b{
-    font-family: var(--font1);
+    
     font-style: italic;
     padding: 10px;
 }
 
 .social{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
-#about-title{
+.about-title{
     color: rgb(224, 126, 143);
     font-style: italic;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-#first-para{
-    background-image: url(background.jpg);
-}
-
-.first-div, .second-div{
+#first-div, .second-div{
     display: flex;
     flex-direction: row;
 }
 
-.first-right img{
-    border-radius: 200px;
-    height: 20em;
+#first-right img{
+    border-radius: 20px;
     width: 20em;
-    margin-left: 50vw;
+    height: 30em;
+    margin-left: 100px;
 }
 
-.second-left img{
-    border-radius: 200px;
-    height: 20em;
-    width: 20em;
-    margin-right: 50vw;
-}
-
-.second-right{
-    margin-right: 20px;
-    border-color: black;
-}

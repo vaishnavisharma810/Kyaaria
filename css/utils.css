@@ -27,9 +27,9 @@ body{
 
 .btn{
     padding: 0px 15px;
-    border: 2px solid black;
+    border: 1px solid black;
     border-radius: 6px;
-    font-family: var(--font1);
+    font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -38,4 +38,15 @@ body{
 .btn:hover{
     background-color: rgb(183, 209, 183);
     color: black;
+}
+
+.headings{
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+.headings:hover{
+    color: rgb(8, 138, 110);
+    
 }
