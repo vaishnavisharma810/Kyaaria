@@ -1,0 +1,41 @@
+.m-auto{
+    margin: auto;
+}
+
+.max-width-1{
+    max-width: 80vw;
+}
+
+.font1{
+    font-family: var(--font1);
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+.form-box input, textarea{
+    width: 52vw;
+    padding: 10px 6px;
+    margin: 7px 0;
+    font-size: 13px;
+    font-family: var(--font1);
+    border: 2px solid #dfdff8;
+    border-radius: 5px;
+}
+
+.btn{
+    padding: 0px 15px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-family: var(--font1);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: rgb(183, 209, 183);
+    color: black;
+}

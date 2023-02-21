@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+
+    <style>
+      .carousel-inner>.carousel-item>img {
+        width: 100%;
+        height: 500px;
+      }
+
+      .accordian {
+        margin-left: 12px;
+      }
+
+      .carousel-caption {
+        position: absolute;
+        bottom: 10%;
+        margin-left: 3%;
+        z-index: 20;
+        color: white;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+      }
+
+      .carousel-caption h3{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        font-size: x-large;
+      }
+    </style>
+
+    <title>Kyaaria | Go the green way </title>
+
+  </head>
+
+  <body>
+    <nav class="navigation max-width-1 m-auto">
+      <div class="navleft">
+        <a href="index.html">
+          <img src="img/logo.jfif" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="navbar-collapse collapse" id="basic-navbar-nav">
+          <div class="me-auto navbar-nav"><a href="/" data-rr-ui-event-key="/" class="nav-link">Home</a>
+            <div class="nav-item dropdown"><a id="basic-nav-dropdown" aria-expanded="false" role="button"
+                class="dropdown-toggle nav-link" tabindex="0" href="#">About</a>
+              <div aria-labelledby="basic-nav-dropdown" data-bs-popper="static" class="dropdown-menu"><a href="/about"
+                  data-rr-ui-dropdown-item="" class="dropdown-item">About Us</a><a href="/about/teamdetails"
+                  data-rr-ui-dropdown-item="" class="dropdown-item">Team Details</a></div>
+            </div><a href="/blog" data-rr-ui-event-key="/blog" class="nav-link">Blog</a><a href="/contact"
+              data-rr-ui-event-key="/contact" class="nav-link">Contact</a>
+          </div>
+          <div class="navbar-nav"><input placeholder="Search" type="text" id="searchbar" class="form-control"><button
+              type="button" id="search" class="btn btn-primary"><svg stroke="currentColor" fill="currentColor"
+                stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                </path>
+              </svg></button><a role="button" class="nav-link" tabindex="0" href="#"><span
+                id="navmenu">Menu</span></a><a role="button" tabindex="0" href="/contact" id="appoint"
+              class="btn btn-outline-dark">Book Appointment</a></div>
+        </div>
+      </div>
+      <form class="d-flex" action="gallery.html" method="get">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </nav>
+
+
+    <div class="max-width-1 m-auto">
+      <hr>
+    </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/carousel8.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h3>A little dirt never hurt anyone</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h3>If you ate today <br> Thank a farmer!</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel7.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h3>"A beautiful plant is like having a friend around the house" <br> -Beth Ditto</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel9.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h3>“Just because you’ve only got houseplants doesn’t mean you don’t have the gardening spirit — I look upon myself as an indoor gardener.” — Sara Moss-Wolfe</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel10.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h3>Lets Go! <br> Don’t stop be-leafing <br> Lets plant!
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+
+
+    <div class="container-fluid">
+      <div id="aboutmid1" class="row">
+        <div class="col-md-1"></div>
+        <div class="col">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5 col-12">
+                <div class="row">
+                  <div class="col"><span class="title1">WHY GARDENING IS GOOD FOR YOU?</span><br>
+                    <hr>
+                  </div>
+                </div>
+                <div class="mt-3 row">
+                  <div class="col"><span class="checkstext1">Maybe you don’t think you were born with a green thumb, but
+                      after tilling, planting, nurturing and harvesting plants, you might see a slightly different
+                      person in the mirror: a person who can grow things and is a little more in tune with the earth.
+
+                      It always feels good to accomplish new tasks, and if you can grow a garden, what can’t you
+                      do?<br><br></span>
+                    <span>Gardening can help reduce symptoms of depression and anxiety.
+
+                      “Gardening gives you a chance to focus on something and put your mind to work with a goal and a
+                      task in mind,” Dr. Hutchins says, “which is helpful especially now with so much illness and death
+                      and talk of death, just to see things growing and things thriving.” <br><br></span> <span>If you
+                      have a vegetable or herb or fruit garden, you’re getting fresh produce that you know hasn’t been
+                      treated with pesticides.
+
+                      “It’s essentially as farm-to-table as it gets,” Dr. Hutchins says, “if you’re eating what you’re
+                      growing.”</span> <br><br>
+                    <span>These benefits are felt and well explained by one having the experience. It is a good feeling.
+                      Try it. Gardening is a source of entertainment and really brings out lots of creativity in you.
+                      The art of planting various crops in the soil, nurturing them and watching them grow by the day
+                      and finally so see them blossom into fruits, is such a good feeling. You would be proud to say at
+                      the dinning table, “this food is from my garden”. So fulfilled.
+
+                    </span>
+                  </div>
+                </div>
+                <div class="mt-3 row">
+                  <div class="col"><span class="checks"><br><svg stroke="currentColor" fill="currentColor"
+                        stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z">
+                        </path>
+                      </svg>&nbsp;&nbsp;&nbsp;Let's make the earth green.<br><svg stroke="currentColor"
+                        fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z">
+                        </path>
+                      </svg>&nbsp;&nbsp;&nbsp;Grow your health, Grow a garden.<br><svg stroke="currentColor"
+                        fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                          d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z">
+                        </path>
+                      </svg>&nbsp;&nbsp;&nbsp;Grow your own vegetables</span></div>
+                </div>
+              </div>
+              <div class="col-md-1"></div>
+              <div id="aboutcenter" class="mt-3 col-md-6 col-12"><img src="img/carousel6.jpg" id="homemidimage" alt=""
+                  class="rounded-circle"></div>
+            </div>
+            <br>
+            <div id="homehr" class="row">
+              <div class="col">
+                <hr>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
+
+    <br><br><br>
+
+    <div id="faq" class="justify-content-md-center row">FREQUENTLY ASKED QUESTIONS</div>
+
+    <br><br>
+
+    <div class="accordion max-width-1 m-auto" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            <strong>How can I utilize a Small Space for gardening? </strong>
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            You don't need a large area to have a vegetable garden. Small sunny spots in your yard, patio, or balcony
+            can all be successful locations. Choosing the right location and ideal varieties of your favorite plants
+            will help you maximize your harvest.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <strong>Can my balcony or rooftop take the added weight of pots full of soil?</strong>
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Terra cotta and ceramic pots are heavy, so you might need to use rice pots, plastic or fiberglass
+            containers, or fabric grow bags combined with lightweight soil mixes.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            <strong>I have a small space to grow vegetables and fruits, what should I do? </strong>
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            You can eventually think of vertical gardening, but a beginner should start with a few pots. You need to get
+            a sense of how much time you have to garden and not overdo it. Arrange beds and larger containers around the
+            outside edges to define the space and spread out the load. Make use of wall space to hang half-baskets and
+            wall pockets.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <strong> Some small space gardening ideas. </strong>
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            A container or hanging basket filled with your favorite herbs. Even a window box, if well-planned, can still
+            make a big impression.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <strong>What vegetables can I grow in the shade?</strong>
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Most vegetable won’t grow well in completely shaded areas, but there are a couple that will tolerate more
+            than most. Lettuce and peas in the summer months, will do well in partial shade.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            <strong> What are the best plants to grow on a balcony or terrace?</strong>
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Choosing the right plants for your site is most important. Does your balcony face south and receive DIRECT
+            sun all day long? Many flowers and most vegetables—if kept well-watered—will love it there.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSeven">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+            <strong> I want to grow edibles.</strong>
+          </button>
+        </h2>
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            You probably won’t be able to grow enough food to meet all your needs, but some pole beans, a pot of
+            lettuce, cherry tomatoes, and a pepper plant or two will give you a fresh taste of summer. Be sure they are
+            located in your brightest spots.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+            <strong> How do I stop birds and insects from eating my plants? </strong>
+          </button>
+        </h2>
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            To stop birds from eating vegetables, cover with some sort of netting. As for the insects, you would need to
+            use a safe insecticide designed to stop the insects or kill them. Be sure to follow the insecticide
+            guidelines, and use one recommended for fruit or vegetables and human consumption.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingNine">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+            <strong> How often should a vegetable garden be watered?</strong>
+          </button>
+        </h2>
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Most plants require an inch to an inch and a half of water per week. But variables such as wind speeds,
+            humidity, rainfall, air temperatures and the consistency of your soil can cause this to vary. When the soil
+            feels dry an inch or two into the ground it’s time to water. A deep watering is more beneficial than a
+            shallow or short watering period. When trying to germinate seeds, many short waterings are more beneficial.
+            You would then switch to longer, more infrequent waterings to encourage root growth and strength.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTen">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+            <strong> What’s the best way to control weeds? </strong>
+          </button>
+        </h2>
+        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Prepare the bed by making sure there are no weeds before planting. Mulch around the plants with a 3-inch
+            layer of straw. You will still need to weed every now and then.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p id="query">If your query is not yet resolved, Don't worry, <a href="contact.html">Contact Us</a> </p>
+
+    <br><br><br>
+
+    <div class="footer  m-auto">
+      <p>Copyright &copy; Kyaaria | Go the green way</p>
+    </div>
+
+  </body>
+
+</html>
