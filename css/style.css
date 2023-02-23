@@ -45,6 +45,7 @@ body{
 }
 
 .navigation{
+    /* background-color:  #33383b; */
     margin-top: 25px;
     height: 74px;
     display: flex;
