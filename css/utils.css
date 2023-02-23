@@ -42,7 +42,8 @@ body{
 
 .headings{
     font-weight: bolder;
-    font-size: larger;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: x-large;
 
 }
 
