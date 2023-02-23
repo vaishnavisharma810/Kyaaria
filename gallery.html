@@ -12,62 +12,97 @@
     <link rel="stylesheet" href="css/utils.css">
 
     <style>
-      .btn{
-    padding: 0px 20px;
-    border: 1px solid black;
-    border-radius: 6px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-        .join{
+      .btn {
+        padding: 0px 20px;
+        border: 1px solid black;
+        border-radius: 6px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .join {
         padding: 10px;
-        }
+      }
 
-.btn:hover{
-    background-color: rgb(183, 209, 183);
-    color: black;
-}
+      .btn:hover {
+        background-color: rgb(183, 209, 183);
+        color: black;
+      }
 
-.slogan{
-  font-style: italic;
-}
+      .slogan {
+        font-style: italic;
+      }
 
-.heading{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-style:oblique;
-  color: rgb(2, 137, 98);
-}
+      .heading {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: oblique;
+        color: rgb(2, 137, 98);
+        border: 0.5px solid rgb(12, 12, 12);
+        padding: 15px;
+        border-radius: 10px;
+      }
 
-.name{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: xx-large;
-    font-style: italic;
-    font-weight: bolder;
-    color: rgb(7, 85, 24);
-    text-shadow: 2px 2px #bfabab;
-}
+      .heading:hover{
+        transition: 0.8s ease;
+        cursor: pointer;
+        box-shadow: 0 40px 60px -6px rgb(220, 217, 217);
+      }
 
-.card{
-    border-radius: 4px;
-    background: #fff;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-  padding: 5px;
-  cursor: pointer;
-}
+      .name {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: xx-large;
+        font-style: italic;
+        font-weight: bolder;
+        color: rgb(7, 85, 24);
+        text-shadow: 2px 2px #bfabab;
+      }
 
-.card-img-top {
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;
-}
+      .cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
 
-.card:hover{
-     transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-}
+      .card {
+        margin: 10px;
+        position: relative;
+        max-width: 250px;
+        max-height: 350px;
+        box-shadow: 0 20px 30px -6px rgb(134, 134, 134);
+      }
+
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        position: relative;
+      }
+
+      .card-desc {
+        display: block;
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color: black;
+        position: absolute;
+        height: 0;
+        top: 0;
+        opacity: 0;
+        padding: 18px 8%;
+        background-color: rgb(240, 246, 243);
+        overflow-y: scroll;
+        transition: 0.8s ease;
+      }
+
+      .card:hover .card-desc {
+        opacity: 0.9;
+        height: 100%;
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+      }
     </style>
 
     <title>Kyaaria | Go the green way </title>
@@ -116,421 +151,325 @@
       <hr>
     </div>
 
-    <div class="card text-center max-width-1 m-auto">
-      <div class="card-header">
-      </div>
+    <div class="heading text-center max-width-1 m-auto">
       <div class="card-body">
-        <h4 class="heading card-title">From my garden to your feed!</h4>
+        <h4 class="card-title">From my garden to your feed!</h4>
         <p class="slogan card-text">“TO PLANT A GARDEN IS TO BELIEVE IN TOMORROW“</p>
         <a href="https://www.instagram.com/_mummas_garden__/" class="btn ">Visit my Garden</a>
-      </div>
-      <div class="card-footer text-muted">
-      </div>
+      </div>      
     </div>
 
     <br><br>
 
     <h1 class="name max-width-1 m-auto">Beans</h1>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/beans1.JPG" class="card-img-top " alt="...">
+          <p class="card-desc">Black-eyed peas, also known as cowpeas, are a common legume cultivated around the globe. Despite their name, black-eyed peas are not peas but rather a type of bean.</p>
+        </div>
+        <div class="card">
+          <img src="img/beans2.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Black-eyed peas are high in protein and fiber, along with micronutrients such as folate, copper, and thiamine. Black-eyed peas are very versatile and can be added to a variety of recipes, including soups, stews, and salads.</p>
+        </div>
+        <div class="card">
+          <img src="img/beans3.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Black-eyed peas are high in antinutrients and may cause digestive issues in some people. However, soaking and cooking them can help minimize side effects.</p>
+        </div>
+      </div>
+    </div>
+<br>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/beans6.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Purple hyacinth bean is a vining annual typically grown for its flowers, although most of the plant is edible. Shades of purple decorate the leaves, stems, flowers, and showy seed pods, making this garden inclusion undeniably eye-catching. </p>
+        </div>
+        <div class="card">
+          <img src="img/beans7.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Hyacinth Beans contain Vitamin D, calcium and phosphorus which essential for maintaining the bone health as they support jaw-bone mineral density, tooth enamel and holds the teeth in place. Vitamins and minerals help cure tooth decay.</p>
+        </div>
+        <div class="card">
+          <img src="img/beans8.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Fava Beans (also known as White Beans! A one-cup (170-gram) serving of fava beans provides 13 grams of protein and 9 grams of fiber — at only 187 calories. A diet rich in protein and fiber may improve feelings of fullness, which may result in a lower calorie intake and weight loss </p>
+        </div>
+      </div>
+    </div>
     <br>
-    <div class="all-images max-width-1 m-auto">
-
-    <div class="card" style="width: 18rem;">
-      <img src="img/beans1.JPG" class="card-img-top " alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/beans2.JPG" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/beans3.JPG" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-  </div>
-  <br>
-  <div class="all-images max-width-1 m-auto">
-
-    <div class="card" style="width: 18rem;">
-      <img src="img/beans6.JPG" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/beans7.JPG" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/beans8.JPG" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Fava Beans (also known as White Beans! A one-cup (170-gram) serving of fava beans provides 13 grams of protein and 9 grams of fiber — at only 187 calories. A diet rich in protein and fiber may improve feelings of fullness, which may result in a lower calorie intake and weight loss </p>
-      </div>
-    </div>
-    
-  </div>
-  <br>
-  <div class="all-images max-width-1 m-auto">
-
-    <div class="card" style="width: 18rem;">
-      <img src="img/beans9.JPG" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/beans10.JPG" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/beans11.JPG" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      </div>
-    </div>
-    
-  </div>
-
-  <br><br>
-  <h1 class="name max-width-1 m-auto " >Bitter Gourd</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/bittergourd1.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Bitter gourd or Karela is low in calories. 100 grams of bitter gourd gives about 19 calories of energy. Around 3.5 grams of carbohydrates and 2.4 grams of fibre are present in 100 grams of karela while it contains only 150 mg of fats and 930 mg of proteins. It also has a high water content of 87 grams.</p>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/beans9.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Fava beans or broad beans are green legumes that come in pods.
+            They have a slightly sweet, earthy flavor and are eaten by people all over the world.
+            Fava beans are loaded with vitamins, minerals, fiber and protein. They’re thought to offer impressive health effects, such as improved motor function and immunity.</p>
+        </div>
+        <div class="card">
+          <img src="img/beans10.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Fava beans are incredibly nutritious and an excellent source of soluble fiber, protein, folate, manganese, copper and several other micronutrients. Fava beans are rich in manganese and copper — two nutrients that may prevent bone loss</p>
+        </div>
+        <div class="card">
+          <img src="img/beans11.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Regularly eating fava beans may boost your immune system. Fava beans are loaded with folate, a nutrient that promotes proper brain and spinal cord development in infants. Adequate folate intake in pregnant women can help prevent neural tube defects.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/bittergourd2.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Bitter gourd has a compound that functions similar to insulin. In fact, ‘Karela and diabetes’ are often coined together! It reduces the blood glucose levels in both type I and type II diabetes. Consuming a glass of karela juice is so effective that diabetes patients need to reduce the dosage of their medicines. In fact, it can also help manage gestational diabetes.</p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/bittergourd4.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Karela is rich in antioxidants and vitamins A and C, which are good for the skin. It reduces ageing and fights acne and skin blemishes. It is useful in treating various skin infections like ringworm, psoriasis, and itching. Karela juice adds lustre to the hair and combats dandruff, hair loss, and split-ends.</p>
-        </div>
-      </div>
-      
     </div>
-    <br><br>
+<br>
+    <h1 class="name max-width-1 m-auto">Bitter Gourd</h1>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/bittergourd1.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Bitter gourd or Karela is low in calories. 100 grams of bitter gourd gives about 19 calories of energy. Around 3.5 grams of carbohydrates and 2.4 grams of fibre are present in 100 grams of karela while it contains only 150 mg of fats and 930 mg of proteins. It also has a high water content of 87 grams.</p>
+        </div>
+        <div class="card">
+          <img src="img/bittergourd2.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Bitter gourd has a compound that functions similar to insulin. In fact, ‘Karela and diabetes’ are often coined together! It reduces the blood glucose levels in both type I and type II diabetes. Consuming a glass of karela juice is so effective that diabetes patients need to reduce the dosage of their medicines. In fact, it can also help manage gestational diabetes.</p>
+        </div>
+        <div class="card">
+          <img src="img/bittergourd4.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Karela is rich in antioxidants and vitamins A and C, which are good for the skin. It reduces ageing and fights acne and skin blemishes. It is useful in treating various skin infections like ringworm, psoriasis, and itching. Karela juice adds lustre to the hair and combats dandruff, hair loss, and split-ends.</p>
+        </div>
+      </div>
+    </div>
+<br>
+
+<br>
     <h1 class="name max-width-1 m-auto">Chillies</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/chillies1.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">The spiciness of green chillies comes from a chemical called capsaicin. Apart from providing a hot and spicy taste, capsaicin is responsible for numerous other health effects on the heart, stomach, and pain relief.</p>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/chillies1.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">The spiciness of green chillies comes from a chemical called capsaicin. Apart from providing a hot and spicy taste, capsaicin is responsible for numerous other health effects on the heart, stomach, and pain relief.</p>
+        </div>
+        <div class="card">
+          <img src="img/chillies2.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Daily chilli consumption helps to repair liver damage and can stall the progression of liver fibrosis, according to the European Association for the Study of the Liver.</p>
+        </div>
+        <div class="card">
+          <img src="img/chillies3.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Red hot chilies are 88% water, 9% carbohydrates, 2% protein, and 0.4% fat (table). In a 100 gram reference amount, chili peppers supply 40 calories, and are a rich source of vitamin C and vitamin B6.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/chillies2.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Daily chilli consumption helps to repair liver damage and can stall the progression of liver fibrosis, according to the European Association for the Study of the Liver.</p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/chillies3.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Red hot chilies are 88% water, 9% carbohydrates, 2% protein, and 0.4% fat (table). In a 100 gram reference amount, chili peppers supply 40 calories, and are a rich source of vitamin C and vitamin B6 </p>
-        </div>
-      </div>
-      
     </div>
-    <br><br>
+<br>
+
+
+<br>
     <h1 class="name max-width-1 m-auto">Guava</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/guava1.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Guava fruits are amazingly rich in antioxidants, vitamin C, potassium, and fiber. This remarkable nutrient content gives them many health benefits.</p>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/guava1.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Guava fruits are amazingly rich in antioxidants, vitamin C, potassium, and fiber. This remarkable nutrient content gives them many health benefits.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/guava2.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Guavas may help boost heart health in a number of ways. The higher levels of potassium and soluble fiber in guavas are also thought to contribute to improved heart health.</p>
+        <div class="card">
+          <img src="img/guava2.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Guavas may help boost heart health in a number of ways. The higher levels of potassium and soluble fiber in guavas are also thought to contribute to improved heart health.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/guava3.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Guava leaf extract has been shown to have an anticancer effect. Test-tube and animal studies show that guava extract can prevent and even stop the growth of cancer cells </p>
+        <div class="card">
+          <img src="img/guava3.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Guava leaf extract has been shown to have an anticancer effect. Test-tube and animal studies show that guava extract can prevent and even stop the growth of cancer cells.</p>
         </div>
       </div>
     </div>
-    <br><br>
-    <h1 class="name max-width-1 m-auto">Mango</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
+<br>
 
-      <div class="card" style="width: 18rem;">
-        <img src="img/mango1.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">One of its most impressive nutrient facts is that just 1 cup (165 grams) of fresh mango provides nearly 67% of the DV for vitamin C. This water-soluble vitamin aids your immune system, helps your body absorb iron, and promotes cell growth and repair</p>
+<br>
+    <h1 class="name max-width-1 m-auto">Mango</h1>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/mango1.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">One of its most impressive nutrient facts is that just 1 cup (165 grams) of fresh mango provides nearly 67% of the DV for vitamin C. This water-soluble vitamin aids your immune system, helps your body absorb iron, and promotes cell growth and repair.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/mango2.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Mango contains nutrients that support a healthy heart.
-            For instance, it offers magnesium and potassium, which help maintain a healthy blood flow. These nutrients help your blood vessels relax, promoting lower blood pressure levels </p>
+        <div class="card">
+          <img src="img/mango2.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Mango contains nutrients that support a healthy heart.
+          For instance, it offers magnesium and potassium, which help maintain a healthy blood flow. These nutrients help your blood vessels relax, promoting lower blood pressure levels .</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/mango3.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Mango has several qualities that make it excellent for digestive health.
+        <div class="card">
+          <img src="img/mango3.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Mango has several qualities that make it excellent for digestive health.
             For one, it contains a group of digestive enzymes called amylases.
             Digestive enzymes break down large food molecules so that your body can absorb them easily.</p>
         </div>
-      </div>      
+      </div>
     </div>
+<br>
 
-    <br><br>
+<br>
     <h1 class="name max-width-1 m-auto">Mulberry</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/mulberry1.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Fresh mulberries consist of 88% water and only have 60 calories per cup (140 grams).
-            By fresh weight, they provide 9.8% carbs, 1.7% fiber, 1.4% protein, and 0.4% fat. Mulberries are rich in many vitamins and minerals, particularly vitamin C and iron</p>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/mulberry1.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Fresh mulberries consist of 88% water and only have 60 calories per cup (140 grams).
+            By fresh weight, they provide 9.8% carbs, 1.7% fiber, 1.4% protein, and 0.4% fat. Mulberries are rich in many vitamins and minerals, particularly vitamin C and iron.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/mulberry2.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">For hundreds of years, mulberries have been part of traditional Chinese medicine as a remedy against cancer.
-            Some researchers now believe that these reputed cancer-preventive effects may have a scientific basis .</p>
+        <div class="card">
+          <img src="img/mulberry2.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">For hundreds of years, mulberries have been part of traditional Chinese medicine as a remedy against cancer.
+            Some researchers now believe that these reputed cancer-preventive effects may have a scientific basis.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/mulberry3.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Mulberry allergy is rare, but people sensitive to birch pollen may experience allergic reactions to mulberries.
-
+        <div class="card">
+          <img src="img/mulberry3.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Mulberry allergy is rare, but people sensitive to birch pollen may experience allergic reactions to mulberries.
           </p>
         </div>
       </div>
-      </div>
-      <br>
-      <div class="all-images max-width-1 m-auto">
-
-        <div class="card" style="width: 18rem;">
+    </div>
+    <br>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
           <img src="img/mulberry4.JPG" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">
-              Mulberries are a superfood that's worth mulling over! Our dried mulberries have a naturally sweet flavor with no added sugar. They provide unusually high levels of protein and iron for a fruit, and are also a rich source of vitamin C, fiber, calcium, and antioxidants.</p>
-          </div>
+          <p class="card-desc">Mulberries are a superfood that's worth mulling over! Our dried mulberries have a naturally sweet flavor with no added sugar. They provide unusually high levels of protein and iron for a fruit, and are also a rich source of vitamin C, fiber, calcium, and antioxidants.</p>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <img src="img/mulberry5.JPG" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Mulberries are healthy when consumed in moderate amounts. According to a test conducted by the American Diabetes Association, there are a few side effects associated with the consumption of mulberries. Mulberries can drop your blood sugar levels badly if not consumed moderately.</p>
-          </div>
+          <p class="card-desc">>Mulberries are healthy when consumed in moderate amounts. According to a test conducted by the American Diabetes Association, there are a few side effects associated with the consumption of mulberries. Mulberries can drop your blood sugar levels badly if not consumed moderately.</p>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <img src="img/mulberry6.JPG" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Mulberry is good for a contracted lung infection. It inhibits Influenza viruses and Pneumococci, responsible for lung infections. The bark of mulberry also contains antibacterial properties. Therefore, mulberry must be consumed while suffering from a lung infection.</p>
-          </div>
-        </div>
-        </div>
-        <br><br>
-
-    <h1 class="name max-width-1 m-auto" >Peas</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/pea1.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Green peas have an impressive nutrition profile.
-            Their calorie content is fairly low, with only 62 calories per 1/2-cup (170-gram) serving. About 70% of those calories come from carbs and the rest are provided by protein and a small amount of fat </p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/pea2.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">The unique protein content of green peas makes them an excellent food choice for those who do not eat animal products. However, it is important to note that they are not a complete source of protein, since they lack the amino acid methionine.</p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/pea4.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Green peas have a low glycemic index and are rich in fiber and protein, all of which are important factors for blood sugar control. Green peas are rich in fiber, which benefits digestion by maintaining the flow of waste through your digestive tract and keeping gut bacteria healthy.</p>
+          <p class="card-desc">Mulberry is good for a contracted lung infection. It inhibits Influenza viruses and Pneumococci, responsible for lung infections. The bark of mulberry also contains antibacterial properties. Therefore, mulberry must be consumed while suffering from a lung infection.</p>
         </div>
       </div>
     </div>
-    <br><br>
-    <h1 class="name max-width-1 m-auto">Pomegranate</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/pome1.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Pomegranates in their whole fruit form are low in calories and fat and high in fiber, vitamins, and minerals. They even contain some protein. Enjoy the nutritional benefits of pomegranate by eating the seeds, or arils, inside.</p>
+<br>
+    <h1 class="name max-width-1 m-auto">Peas</h1>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/pea1.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Green peas have an impressive nutrition profile.
+            Their calorie content is fairly low, with only 62 calories per 1/2-cup (170-gram) serving. About 70% of those calories come from carbs and the rest are provided by protein and a small amount of fat.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/pome2.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Pomegranates are rich in an array of antioxidant compounds that help protect your cells from free radical damage. Pomegranates contain compounds that may help prevent chronic inflammation associated with increased chronic disease risk.</p>
+        <div class="card">
+          <img src="img/pea2.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">The unique protein content of green peas makes them an excellent food choice for those who do not eat animal products. However, it is important to note that they are not a complete source of protein, since they lack the amino acid methionine.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/pome4.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Pomegranate has been observed to have anticancer effects. It may slow tumor growth and spread and reduce inflammation, although more research is needed to learn more.</p>
+        <div class="card">
+          <img src="img/pea4.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Green peas have a low glycemic index and are rich in fiber and protein, all of which are important factors for blood sugar control. Green peas are rich in fiber, which benefits digestion by maintaining the flow of waste through your digestive tract and keeping gut bacteria healthy.</p>
         </div>
       </div>
     </div>
-    <br><br>
-    <h1 class="name max-width-1 m-auto">Pumpkin</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
-
-      <div class="card" style="width: 18rem;">
-        <img src="img/pumpkin1.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Pumpkins are loaded with a variety of nutrients, including fiber, vitamins, minerals, and antioxidants. Pumpkin seeds are low in carbs but high in fat, making them an ideal snack for people who follow low carb or plant-based diets.</p>
+<br>
+<h1 class="name max-width-1 m-auto">Pomegranate</h1>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/pome1.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Pomegranates in their whole fruit form are low in calories and fat and high in fiber, vitamins, and minerals. They even contain some protein. Enjoy the nutritional benefits of pomegranate by eating the seeds, or arils, inside.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/pumpkin2.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Most of the health benefits of pumpkin relate to its content of fiber and micronutrients, including beta carotene and vitamin A. Pumpkin is also rich in fiber, which can help dull blood sugar spikes after you consume carb-containing foods </p>
+        <div class="card">
+          <img src="img/pome2.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Pomegranates are rich in an array of antioxidant compounds that help protect your cells from free radical damage. Pomegranates contain compounds that may help prevent chronic inflammation associated with increased chronic disease risk.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/pumpkin3.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Pumpkin is generally a healthy food with no negative consequences if eaten in moderation, but for optimal health, you should limit highly processed, sugar-laden pumpkin foods to occasional treats.</p>
+        <div class="card">
+          <img src="img/pome4.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Pomegranate has been observed to have anticancer effects. It may slow tumor growth and spread and reduce inflammation, although more research is needed to learn more.</p>
         </div>
       </div>
     </div>
-    <br><br>
-    <h1 class="name max-width-1 m-auto">Reddish and Custard Apple</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
+<br>
 
-      <div class="card" style="width: 18rem;">
-        <img src="img/reddish1.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Radishes are rich in antioxidants and minerals like calcium and potassium. Together, these nutrients help lower high blood pressure and reduce your risks for heart disease. The radish is also a good source of natural nitrates that improve blood flow.</p>
+<h1 class="name max-width-1 m-auto">Pumpkin</h1>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/pumpkin1.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Pumpkins are loaded with a variety of nutrients, including fiber, vitamins, minerals, and antioxidants. Pumpkin seeds are low in carbs but high in fat, making them an ideal snack for people who follow low carb or plant-based diets.</p>
+        </div>
+        <div class="card">
+          <img src="img/pumpkin2.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Most of the health benefits of pumpkin relate to its content of fiber and micronutrients, including beta carotene and vitamin A. Pumpkin is also rich in fiber, which can help dull blood sugar spikes after you consume carb-containing foods.</p>
+        </div>
+        <div class="card">
+          <img src="img/pumpkin3.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Pumpkin is generally a healthy food with no negative consequences if eaten in moderation, but for optimal health, you should limit highly processed, sugar-laden pumpkin foods to occasional treats.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/reddish2.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">The benefits of this superfood can be obtained by consuming not only the radish roots, but also the flowers, leaves and seeds. Radishes are great at detoxifying the body, as well as improving the liver and stomach functions. </p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/custard apple.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Custard apple is high in fibers, which helps digestion, prevents constipation, and detoxifies our body. Sitafal contains many antioxidants (flavonoids, phenolic compounds, kaurenoic acid, and vitamin C) that fight free radicals associated with chronic diseases, cancer, and heart disease.</p>
-        </div>
-      </div>
-
     </div>
-    <br><br>
-    <h1 class="name max-width-1 m-auto">Red Spinach</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
+<br>
 
-      <div class="card" style="width: 18rem;">
-        <img src="img/spinach1.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Red spinach is rich source of vitamin A, vitamin B, vitamin C and Iron.</p>
+<h1 class="name max-width-1 m-auto">Radish and Custard Apple</h1>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/reddish1.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Radishes are rich in antioxidants and minerals like calcium and potassium. Together, these nutrients help lower high blood pressure and reduce your risks for heart disease. The radish is also a good source of natural nitrates that improve blood flow.</p>
+        </div>
+        <div class="card">
+          <img src="img/reddish2.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">The benefits of this superfood can be obtained by consuming not only the radish roots, but also the flowers, leaves and seeds. Radishes are great at detoxifying the body, as well as improving the liver and stomach functions. </p>
+        </div>
+        <div class="card">
+          <img src="img/custard apple.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Custard apple is high in fibers, which helps digestion, prevents constipation, and detoxifies our body. Sitafal contains many antioxidants (flavonoids, phenolic compounds, kaurenoic acid, and vitamin C) that fight free radicals associated with chronic diseases, cancer, and heart disease.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/spinach5.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Its flowers are white, pink or red in color</p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/spinach4.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Flowers of red spinach never form large petals. They eventually form small dark purple berries.</p>
-        </div>
-      </div>
-
     </div>
-    <br><br>
-    <h1 class="name max-width-1 m-auto">Turmeric</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
+<br>
 
-      <div class="card" style="width: 18rem;">
-        <img src="img/turmeric1.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Turmeric is a flavorsome spice that is nutritious to consume, it has also traditionally been used in Ayurvedic and Chinese medicine to treat inflammatory conditions, skin diseases, wounds, digestive ailments, and liver conditions.</p>
+<h1 class="name max-width-1 m-auto">Red Spinach</h1>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/spinach1.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Red spinach is rich source of vitamin A, vitamin B, vitamin C and Iron.</p>
+        </div>
+        <div class="card">
+          <img src="img/spinach5.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Its flowers are white, pink or red in color</p>
+        </div>
+        <div class="card">
+          <img src="img/spinach4.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Flowers of red spinach never form large petals. They eventually form small dark purple berries.</p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/turmeric3.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Turmeric adds flavor to food, which explains its presence in curry powder. However, turmeric can also play an important role in digesting that food.
+    </div>
+<br>
+
+<h1 class="name max-width-1 m-auto">Turmeric</h1>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/turmeric1.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Turmeric is a flavorsome spice that is nutritious to consume, it has also traditionally been used in Ayurvedic and Chinese medicine to treat inflammatory conditions, skin diseases, wounds, digestive ailments, and liver conditions.</p>
+        </div>
+        <div class="card">
+          <img src="img/turmeric3.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Turmeric adds flavor to food, which explains its presence in curry powder. However, turmeric can also play an important role in digesting that food.
             The spice can contribute to healthy digestion as a result of its antioxidant and anti-inflammatory properties.</p>
         </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/turmeric4.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Turmeric is thought of as a pain reliever. The spice is reputed to relieve arthritis pain as well. The antioxidant effect of turmeric appears to be so powerful that it may stop your liver from being damaged by toxins. </p>
+        <div class="card">
+          <img src="img/turmeric4.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Turmeric is thought of as a pain reliever. The spice is reputed to relieve arthritis pain as well. The antioxidant effect of turmeric appears to be so powerful that it may stop your liver from being damaged by toxins. </p>
         </div>
       </div>
-
     </div>
-    <br><br>
-    <h1 class="name max-width-1 m-auto">Sugarcane and Okra</h1>
-    <br>
-    <div class="all-images max-width-1 m-auto">
+<br>
 
-      <div class="card" style="width: 18rem;">
-        <img src="img/sugarcane.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Sugarcane is full of antioxidants that are essential to building and maintaining a healthy immune system. Antioxidants help combat free radicals (molecules that cause damage to cells) that can worsen several medical problems like diabetes, malaria, myocardial infarction, and skin cancer.</p>
+<h1 class="name max-width-1 m-auto">Sugarcane and Okra</h1>
+    <div class="m-auto max-width-1">
+      <div class="cards">
+        <div class="card">
+          <img src="img/sugarcane.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Sugarcane is full of antioxidants that are essential to building and maintaining a healthy immune system. Antioxidants help combat free radicals (molecules that cause damage to cells) that can worsen several medical problems like diabetes, malaria, myocardial infarction, and skin cancer.</p>
+        </div>
+        <div class="card">
+          <img src="img/sugarcane2.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">There are 74 calories in 100 grams of Sugarcane Juice. Although it provides several nutrients, sugarcane juice remains high in sugar and carbs. Sugarcane juice has various antioxidants that help combat liver infections. Sugarcane juice helps replenish the lost protein count rapidly.</p>
+        </div>
+        <div class="card">
+          <img src="img/okra.JPG" class="card-img-top" alt="...">
+          <p class="card-desc">Okra is rich in vitamins A and C, as well as antioxidants that help reduce the risk of serious health conditions like cancer, diabetes, stroke, and heart disease. Okra is also a good source of: Magnesium. Folate. It is a high-fiber food rich in vitamins and minerals. Dietitians consider it as a cholesterol-lowering food as well. </p>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/sugarcane2.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">There are 74 calories in 100 grams of Sugarcane Juice. Although it provides several nutrients, sugarcane juice remains high in sugar and carbs. Sugarcane juice has various antioxidants that help combat liver infections. Sugarcane juice helps replenish the lost protein count rapidly.</p>
-        </div>
-      </div>
-      <div class="card" style="width: 18rem;">
-        <img src="img/okra.JPG" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">
-            Okra is rich in vitamins A and C, as well as antioxidants that help reduce the risk of serious health conditions like cancer, diabetes, stroke, and heart disease. Okra is also a good source of: Magnesium. Folate. It is a high-fiber food rich in vitamins and minerals. Dietitians consider it as a cholesterol-lowering food as well. </p>
-        </div>
-      </div>
-
     </div>
-
-
+<br>
 
 
     <br><br><br>
